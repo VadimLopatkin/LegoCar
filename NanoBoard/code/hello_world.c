@@ -154,5 +154,26 @@ int main()
 
 		for(i=0;i<100000;i++);
 	}
+	
+	/* servo
+	
+	while(1) {
+
+		unsigned int key = IORD(KEY_BASE,0);
+
+		if(key == 2) {
+			IOWR(LED_BASE,0,0b1);
+			motor_setting(PWM1_BASE, 0, 10000, 10000, 2);
+		} else if (key == 1) {
+			IOWR(LED_BASE,0,0b10000000);
+			motor_setting(PWM1_BASE, 10000, 0, 10000, 1);
+		} else {
+			IOWR(LED_BASE,0,0b00011000);
+			motor_setting(PWM1_BASE, 0, 10000, 10000, 0);
+		}
+	}
+	
+	*/
+	
 	return 0;
 }
