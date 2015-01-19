@@ -33,10 +33,12 @@ int main()
 
 	while(1)
 	{
-		// serial communiction test: send
-		Uartcom_send_byte('b');
-		// and receive
-    	printf("%c", Uart_receive_byte(UART_0_BASE));
+    		
+    		// receive (blocking)
+    		//char r = Uart_receive_byte(UART_0_BASE);
+    		//printf("\nrec: %d : %c", r, r);
+    		// send
+    		//Uart_send_byte(UART_0_BASE, r);
 
 
 		// init Ultrasound
