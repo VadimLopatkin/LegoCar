@@ -1,0 +1,20 @@
+Steps to run the code:
+
+Steps for running Nanoboard:
+1. Connect Nanoboard to Computer with installed Altera suite via USB
+2. Open the sof file in Altera main application
+3. Create an Eclipse project via Altera application
+4. Copy the files located in Nanoboard folder to newly created eclipse project
+5. Run the project as "Nios II Application"
+
+Tip: Lookup the correct connection pins using the sdf file and Nanoboard documentation.
+
+Steps for running iMX6 board:
+1. Connect iMX6 board to the power
+2. Plug in the camera and serial connector to iMX6 board
+3. Boot the board
+4. Connect via ssh or debug serial port
+5. Put the car on the track so that camera will see the track
+6. Run python /gnbw/car.py
+
+HAVE FUN !!!!!! :)
