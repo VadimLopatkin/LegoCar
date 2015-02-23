@@ -1,8 +1,3 @@
-/*
-  AUTHOR: GANG CHEN
- gangchen1170@gmail.com
- */
-
 #include "system.h"
 #include "io.h"
 #include "stdio.h"
@@ -19,18 +14,10 @@
 int main()
 {
     int i;
-    unsigned int returndata[2]={0,0};
-    //unsigned char res;
-    //unsigned char index=0;
-    //unsigned char sensor_type;
-    //unsigned char sensor_index;
-    //unsigned char sensor_RW;
     Uartcom_init();
-printf("testtttttttt");
     while(1) {
     	if(frame_done)
     	{
-
     		//test receive the frame message from Imx6
     		frame_done=0;
     		int l = 18, r = 35 ,s = 70 , b = 39, f = 38,h = 9;
